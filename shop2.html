@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeska</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="barre-haut">
+        <button style="padding: 10px 20px; background-color: transparent; color: black; border: none; border-radius: 5px; cursor: pointer;">
+            <a href="shop.html">
+                <img src="Images/logo.png" alt="Logo" class="logo">
+            </a>
+        </button>
+        <h1>Valeska</h1>
+        <div id="cart-container" style="position: relative;">
+            <button id="cart-button">Panier</button>
+            <div id="cart-dropdown" style="display: none; position: absolute; top: 100%; right: 0; border: 1px solid #ccc; background: white; padding: 10px; width: 200px;">
+                <p id="cart-content" style="color:black">   </p>
+            </div>
+        </div>
+    </div>
+    <div class="vide"></div>
+    <div class="container-grid">
+        <div class="Grille">
+            <div class="image">
+                <img src="Images/montre-1.jpg" alt="Tag Heuer Carrera">
+                <h3>Tag Heuer Carrera</h3>
+                <h4>6999 €</h4>
+                <button class="add-to-cart" data-name="Tag Heuer Carrera" data-price="6999 €">Ajouter au panier</button>
+            </div>
+            <div class="image">
+                <img src="Images/montre-2.jpg" alt="Tag Heuer Formula 1">
+                <h3>Tag Heuer Formula 1</h3>
+                <h4>1977 €</h4>
+                <button class="add-to-cart" data-name="Tag Heuer Formula 1" data-price="1977 €">Ajouter au panier</button>
+            </div>
+            <div class="image">
+                <img src="https://extropian.b-cdn.net/data/brand_images/Dryden-Pathfinder-Automatic%20Diver-Midnight%20Blue%20(Stainless%20Steel%20Bracelet)-f2c3?optimizer=image&quality=40" alt="Dryden Pathfinder">
+                <h3>Dryden Pathfinder</h3>
+                <h4>630 €</h4>
+                <button class="add-to-cart" data-name="Dryden Pathfinder" data-price="630 €">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+    <script src="shop2.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    overflow-x: hidden; /* Évite les défilements horizontaux */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.barre-haut {
+    background-color: #222d52;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    color: white;
+    padding: 0 20px; /* Garde un peu d'espace à gauche et à droite */
+    position: relative; /* Nécessaire pour positionner les enfants avec `absolute` */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    margin-left: auto; /* Aligne le logo au centre ou à droite selon le reste */
+}
+
+.Grille{
+    display: grid; 
+    grid-template-columns: repeat(3, 400px); 
+    grid-template-rows: repeat(5, 400px); 
+    color: #222d52;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.vide {
+    margin-top: 100px;
+}
+.image img{
+    width: 200px;
+}
+.container-grid{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-container{
+    color: #222D52;
+    justify-content: center;
+}
+
+#cart-button {
+    position: absolute;
+    top: 10px; /* Distance par rapport au haut de la barre */
+    left: -100px; /* Distance par rapport au bord gauche */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#cart-button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
+h1 {
+    margin: 0 auto; /* Centre le titre dans la barre */
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1;
+    font-family: Arial, sans-serif;
+}
